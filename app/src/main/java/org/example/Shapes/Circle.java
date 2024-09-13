@@ -3,7 +3,8 @@ package org.example.Shapes;
 import org.example.Interface.Method;
 
 public class Circle implements Method {
-
+    
+    
     double area=0;
     double circumference=0;
     double diameter=0;
@@ -16,6 +17,11 @@ public class Circle implements Method {
     @Override
     public void message() {
         System.out.println("Area of Circle: "+ area);
+    }
+
+    @Override
+    public String shapeName() {
+        return "Circle";
     }
     
 }

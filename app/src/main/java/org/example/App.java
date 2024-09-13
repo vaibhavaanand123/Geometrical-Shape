@@ -3,6 +3,7 @@
  */
 package org.example;
 
+import java.lang.reflect.Method;
 import java.util.Scanner;
 
 import org.example.implementation.Implementation;
@@ -26,6 +27,8 @@ public class App {
             Implementation implementation=new Implementation();
             implementation.calculate(choice);
             sc.close();
+            
+            
     
     }
 }

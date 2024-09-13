@@ -15,20 +15,22 @@ public class CalculationCreator {
        switch (choice) {
         case 1:
         Circle cr=new Circle();
-        System.out.println("You have chosen Circle");
+        Method.name(cr.shapeName());
         System.out.println("Enter the Radius: ");
         Double radius=sc.nextDouble();
         cr.area(radius);
         sc.close();
+        
         return cr;
         case 2:
         Square sq=new Square();
-        System.out.println("You have chosen Square");
+        Method.name(sq.shapeName());
         System.out.println("Enter the Side: ");
         Double side=sc.nextDouble();
         sq.area(side);
         sq.perimeter(side);
         sc.close();
+        
         return sq;
 
         default:

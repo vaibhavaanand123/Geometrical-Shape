@@ -20,6 +20,10 @@ public class Square implements Method {
     System.out.println("Perimeter of Square :" + perimeter);
     }
 
-    
+    @Override
+    public String shapeName() {
+        return "Square";
+    }
+
     
 }

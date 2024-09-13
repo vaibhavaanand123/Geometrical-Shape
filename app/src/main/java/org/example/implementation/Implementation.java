@@ -12,6 +12,8 @@ public class Implementation {
 
         try {
             method.message();
+            Method.more();
+            
         } catch (Exception e) {
             System.err.println("Enter correct choice");
         }
