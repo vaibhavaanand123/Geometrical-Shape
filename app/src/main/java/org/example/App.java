@@ -5,26 +5,31 @@ package org.example;
 
 import java.util.Scanner;
 
-import org.example.implementation.Implementation;
+import org.example.Implementation.Implementation;
 
 public class App {
 
-        public static void main(String[] args) {
-            System.out.println("Welcome to Geometry");
-            System.out.println("Choose the Geometry Shape");
-            System.out.println("1. Circle");
-            System.out.println("2. Square");
-            System.out.println("3. Rectangle");
-            System.out.println("4. Triangle");
-            System.out.println("5. Rhombus");
-            System.out.println("6. Trapezium ");
-            System.out.println("7. Parallelogram");
-            System.out.println("8. Oval ");
-            Scanner sc=new Scanner(System.in);
-            Integer choice=sc.nextInt();
-            Implementation implementation=new Implementation();
-            implementation.calculate(choice);
-            sc.close();
-            
+    public static void main(String[] args) {
+        System.out.println("Welcome to Geometry");
+        System.out.println("Choose the Geometry Shape");
+        System.out.println("1. Circle");
+        System.out.println("2. Square");
+        System.out.println("3. Rectangle");
+        System.out.println("4. Triangle");
+        System.out.println("5. Rhombus");
+        System.out.println("6. Trapezium ");
+        System.out.println("7. Parallelogram");
+        System.out.println("8. Oval ");
+        Scanner sc = new Scanner(System.in);
+        Integer choice = sc.nextInt();
+        Implementation implementation = new Implementation();
+        implementation.calculate(choice);
+        sc.close();
+
+        // GreetingService greet =(msg) -> {
+        //     System.out.println(msg);
+        // };
+
+        // greet.greeting("Thank You!!");
     }
 }
