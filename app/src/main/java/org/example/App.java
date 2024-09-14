@@ -3,7 +3,6 @@
  */
 package org.example;
 
-import java.lang.reflect.Method;
 import java.util.Scanner;
 
 import org.example.implementation.Implementation;
@@ -11,7 +10,6 @@ import org.example.implementation.Implementation;
 public class App {
 
         public static void main(String[] args) {
-            Scanner sc=new Scanner(System.in);
             System.out.println("Welcome to Geometry");
             System.out.println("Choose the Geometry Shape");
             System.out.println("1. Circle");
@@ -22,13 +20,11 @@ public class App {
             System.out.println("6. Trapezium ");
             System.out.println("7. Parallelogram");
             System.out.println("8. Oval ");
-    
+            Scanner sc=new Scanner(System.in);
             Integer choice=sc.nextInt();
             Implementation implementation=new Implementation();
             implementation.calculate(choice);
             sc.close();
             
-            
-    
     }
 }
